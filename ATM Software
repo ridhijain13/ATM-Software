@@ -1,0 +1,66 @@
+#Welcome window
+print("-----------------------------------------------------------------------------------")
+print("\t\t\t\tWelcome\n\t\t\tTo Your Trusted State Bank Of India")
+print("-----------------------------------------------------------------------------------")
+print("\n")
+#Starting Menu
+print("Please Insert Your Card")
+print("\n")
+def Account_info():
+      #Account info
+                  name = 'Ridhi Jain'
+                  acc_no = 'XXXXXXX2685'
+                  branch = 'Nagpur'
+                  print("Name = ",name)
+                  print("Account no = ",acc_no)
+                  print("Branch = ",branch)
+                  print("\n")
+def bal():
+    balance = 30000
+    print("Your account Balance is",balance)
+def withdraw():
+    balance =30000
+    withdrawal_amount = int(input("Please enter the withdrawal amount :"))
+    balance = balance - withdrawal_amount 
+    print("Your current balance is ",balance)
+def deposit():
+    balance = 30000
+    deposit_amount = int(input("Please enter the deposit amount :"))
+    balance = balance + deposit_amount
+    print("Your current balance is",balance)
+def changePin():
+    new_pin = int(input("Please enter new pin :"))
+    pin == new_pin
+    print("Pin changes successfully")
+#Authentication pin
+password = 8910
+pin = int(input("ENTER YOUR PIN :"))
+
+if pin == password :
+            while True :
+                  
+                  
+
+                  
+                  print("SELECT ANY ONE OPTION :")
+                  print("----------------------")
+                  print("1) Account Information\n2) Balance\n3) Withdraw\n4) Deposit\n5) Change Pin\n6) Exit")
+
+                  try :
+                        choice = int(input("Please enter the valid option :"))
+                  except :
+                        print("Please enter valid option .")
+                  if choice == 1 :
+                         Account_info()
+                  if choice == 2:
+                        bal()
+                  if choice == 3:
+                        withdraw()
+                  if choice == 4:
+                        deposit()
+                  if choice == 5:
+                        changePin()
+                  if choice == 6:
+                        break
+else :
+      print("INVALID PIN!!\nPlease enter correct pin")
